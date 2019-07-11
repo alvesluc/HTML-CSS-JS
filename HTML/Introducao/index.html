@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic HTML</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <header>
+        <h1>Hey Pizza</h1>
+        <ul>
+            <li>Home</li>
+            <li><a href="about.html">Sobre</a></li>
+            <li>Contato</li>
+        </ul>
+    </header>
+
+    <section>
+        <ul>
+            <li>Qualidade</li>
+            <li>Sabor</li>
+            <li>Praticidade</li>
+            <li>Agilidade</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Sabores</h2>
+        <p>Conheça os nossos <strong>2 sabores</strong> <em>de pizza</em></p>
+        
+        <img src="img/pizza.jpg" alt="Pizzas diversas">
+
+        <table border="1px">
+            <tr>
+                <th>Sabor</th>
+                <th>Molho e Queijo</th>
+                <th>Carne Extra</th>
+                <th>Salada</th>
+                <th>Azeitona</th>
+            </tr>
+            <tr>
+                <td>Queijo</td>
+                <td rowspan="2">Disponível</td>
+                <td>Disponível</td>
+                <td>Disponível</td>
+                <td>Disponível</td>
+            </tr>
+            <tr>
+                <td>Calabresa</td>
+                <td>Indisponível</td>
+                <td>Disponível</td>
+                <td>Disponível</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Contato</h2>
+
+        <form action="http://arquivo.devmedia.com.br/projeto/requisicao.php" method="POST">
+            <label>Nome:</label>
+            <input type="text" name="nome">
+            <label>Email:</label>
+            <input type="text" name="email">
+            <label>Mensagem:</label>
+            <textarea name="mensagem" cols="30" rows="5"></textarea>
+            <input type="submit" value="Enviar mensagem">
+        </form>
+        
+    </section>
+
+    <footer>
+        <p>Hey pizza</p>
+    </footer>
+</body>
+</html>

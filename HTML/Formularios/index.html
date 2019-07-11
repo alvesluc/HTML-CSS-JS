@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="GET" action="https://arquivo.devmedia.com.br/projeto/requisicao.php">
+
+        <fieldset>
+            <legend>Conta:</legend>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" required minlength="5" maxlength="256"/>
+            </div>
+            <div>
+                <label>Senha:</label>
+                <input type="password" name="senha" required/>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados pessoais:</legend>
+            <div>
+                <label>Nome:</label>
+                <input type="text" placeholder="Ex.: Lucas" name="nome" required/>
+            </div>
+            <div>
+                <label>Telefone:</label>
+                <input type="text" placeholder="Ex.: (81) 99142-3056" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" name="telefone" required/>
+            </div>
+            <div>
+                <label>Sexo:</label>
+                <input type="radio" value="masculino" name="sexo" checked />
+                <label>Masculino</label>
+                <input type="radio" value="feminino" name="sexo" />
+                <label>Feminino</label>
+            </div>
+            <div>
+                <label>Data de nascimento:</label>
+                <input type="date" name="data de nascimento" required/>
+            </div>
+            <div>
+                <label>Foto de perfil:</label>
+                <input type="file" accept="image/*" name="foto_de_perfil">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço:</legend>
+            <div>
+                <label>Rua:</label>
+                <input type="text" name="rua"/>
+            </div>
+            <div>
+                <label>Complemento:</label>
+                <input type="text" name="complemento"/>
+            </div>
+            <div>
+                <label>Numero:</label>
+                <input type="number" min="1" max="9999" name="numero"/>
+            </div>
+            <div>
+                <label>Cidade:</label>
+                <input type="text" name="cidade"/>
+            </div>
+            <div>
+                <label>Estado:</label>
+                <select name="UF">
+                    <option value="PE">Pernambuco</option>
+                    <option value="PB">Paraíba</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações:</legend>
+            <div>
+                <label>Sua opnião sobre nós:</label>
+                <textarea maxlength="256" placeholder="Escreva aqui sua opnião" name="sua_opniao"></textarea>
+            </div>
+            <div>
+                <label>Ofertas por email </label>
+                <input type="checkbox" checked name="ofertas_por_email">
+            </div>
+
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
